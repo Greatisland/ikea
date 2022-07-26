@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA</title>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--basic-->
+  <script src="../js/common.js" defer></script>
+  <script src="../js/sub.js" defer></script>
+  <script src="../js/modal.js" defer></script>
+  <link rel="stylesheet" href="../css/sub.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_top">
+      <ul class="gnb_login">
+        <li class="icon_wrap">
+          <form action="" name="search" class="search">
+            <input type="search" class="search_bar" placeholder="검색어 입력">
+            <button type="submit" class="search_icon"></button>
+          </form>
+          <a href="#!" class="bag_icon"></a>
+          <a href="#!" class="heart_icon"></a>
+        </li>
+        <li><a href="#!">로그인</a></li>
+        <li><a href="#!">회원가입</a></li>
+      </ul>
+    </div>
+    <div class="header_bottom">
+      <div class="header_inner">
+        <ul class="gnb_left">
+          <li class="lnb_btn">
+            <div class="menu_name">
+              <span class="ham_btn">
+                <span class="line_01"></span>
+                <span class="line_02"></span>
+                <span class="line_03"></span>
+              </span>
+              모든 제품
+              <div class="gnb_content">
+                <div class="content_inner">
+                  <div class="content_menu">
+                    <h3 class="content_title eng">CATEGORY</h3>
+                    <ul class="content_wrap">
+                      <li class="lnb lnb01 on">
+                        <a href="#!" class="lnb_title">IKEA 여름상품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">정원/가드닝</a></li>
+                          <li><a href="../sub/sub.html">장식 조명</a></li>
+                          <li><a href="../sub/sub.html">야외활동/피크닉</a></li>
+                          <li><a href="../sub/sub.html">여름 장식/데코</a></li>
+                          <li><a href="../sub/sub.html">여름 파티</a></li>
+                          <li><a href="../sub/sub.html">여름 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">바비큐</a></li>
+                          <li><a href="../sub/sub.html">여름 시즌푸드</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb02">
+                        <a href="#!" class="lnb_title">홈스마트</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">스마트 조명</a></li>
+                          <li><a href="../sub/sub.html">스마트 전동 블라인드</a></li>
+                          <li><a href="../sub/sub.html">스마트 컨트롤 시스템</a></li>
+                          <li><a href="../sub/sub.html">와이파이 스피커</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb03">
+                        <a href="#!" class="lnb_title">가구</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">게임용가구</a></li>
+                          <li><a href="../sub/sub.html">가구세트</a></li>
+                          <li><a href="../sub/sub.html">침대</a></li>
+                          <li><a href="../sub/sub.html">소파</a></li>
+                          <li><a href="../sub/sub.html">책장/선반유닛</a></li>
+                          <li><a href="../sub/sub.html">식탁/책상</a></li>
+                          <li><a href="../sub/sub.html">수납장/장식장</a></li>
+                          <li><a href="../sub/sub.html">TV/멀티미디어가구</a></li>
+                          <li><a href="../sub/sub.html">서랍장/서랍유닛</a></li>
+                          <li><a href="../sub/sub.html">옷장</a></li>
+                          <li><a href="../sub/sub.html">의자</a></li>
+                          <li><a href="../sub/sub.html">야외용 가구</a></li>
+                          <li><a href="../sub/sub.html">거실장/찬장/콘솔테이블</a></li>
+                          <li><a href="../sub/sub.html">어린이 가구</a></li>
+                          <li><a href="../sub/sub.html">칸막이/파티션</a></li>
+                          <li><a href="../sub/sub.html">이동식 선반</a></li>
+                          <li><a href="../sub/sub.html">바테이블/의자</a></li>
+                          <li><a href="../sub/sub.html">암체어/카우치/</a></li>
+                          <li><a href="../sub/sub.html">카페가구</a></li>
+                          <li><a href="../sub/sub.html">영유아 가구</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb04">
+                        <a href="#!" class="lnb_title">홈오피스</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">사무용의자</a></li>
+                          <li><a href="../sub/sub.html">책상/컴퓨터책상</a></li>
+                          <li><a href="../sub/sub.html">책상/의자 세트</a></li>
+                          <li><a href="../sub/sub.html">서랍유닛</a></li>
+                          <li><a href="../sub/sub.html">책장/선반유닛</a></li>
+                          <li><a href="../sub/sub.html">수납유닛/수납장</a></li>
+                          <li><a href="../sub/sub.html">칸막이/파티션</a></li>
+                          <li><a href="../sub/sub.html">작업등</a></li>
+                          <li><a href="../sub/sub.html">케이블/충전기</a></li>
+                          <li><a href="../sub/sub.html">서류/미디어정리용품</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb05">
+                        <a href="#!" class="lnb_title">침대/매트리스</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">침대</a></li>
+                          <li><a href="../sub/sub.html">침구</a></li>
+                          <li><a href="../sub/sub.html">매트리스</a></li>
+                          <li><a href="../sub/sub.html">침대협탁</a></li>
+                          <li><a href="../sub/sub.html">매트리스 베이스</a></li>
+                          <li><a href="../sub/sub.html">침대헤드</a></li>
+                          <li><a href="../sub/sub.html">침대수납</a></li>
+                          <li><a href="../sub/sub.html">침대갈빗살</a></li>
+                          <li><a href="../sub/sub.html">침대다리</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb05">
+                        <a href="#!" class="lnb_title">어린이 IKEA</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">어린이</a></li>
+                          <li><a href="../sub/sub.html">영유아</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb06">
+                        <a href="#!" class="lnb_title">조명</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">일반 조명</a></li>
+                          <li><a href="../sub/sub.html">장식 조명</a></li>
+                          <li><a href="../sub/sub.html">시스템 조명</a></li>
+                          <li><a href="../sub/sub.html">스마트 조명</a></li>
+                          <li><a href="../sub/sub.html">야외용 조명</a></li>
+                          <li><a href="../sub/sub.html">욕실 조명</a></li>
+                          <li><a href="../sub/sub.html">LED전구</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb07">
+                        <a href="#!" class="lnb_title">아웃도어/야외용품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">야외용 가구</a></li>
+                          <li><a href="../sub/sub.html">야외용 화분/식물</a></li>
+                          <li><a href="../sub/sub.html">야외용 수납</a></li>
+                          <li><a href="../sub/sub.html">야외용 쿠션</a></li>
+                          <li><a href="../sub/sub.html">야외활동/피크닉</a></li>
+                          <li><a href="../sub/sub.html">야외용 액세서리</a></li>
+                          <li><a href="../sub/sub.html">조립식 마루/데크</a></li>
+                          <li><a href="../sub/sub.html">파라솔/가제보</a></li>
+                          <li><a href="../sub/sub.html">야외용 조명</a></li>
+                          <li><a href="../sub/sub.html">바비큐</a></li>
+                          <li><a href="../sub/sub.html">야외용 주방</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb08">
+                        <a href="#!" class="lnb_title">주방용품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">식품보관/정리</a></li>
+                          <li><a href="../sub/sub.html">디너웨어</a></li>
+                          <li><a href="../sub/sub.html">서빙웨어</a></li>
+                          <li><a href="../sub/sub.html">커피/차</a></li>
+                          <li><a href="../sub/sub.html">테이블 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">조리도구</a></li>
+                          <li><a href="../sub/sub.html">유리제품/유리병</a></li>
+                          <li><a href="../sub/sub.html">요리도구</a></li>
+                          <li><a href="../sub/sub.html">식기세척용품</a></li>
+                          <li><a href="../sub/sub.html">식기도구</a></li>
+                          <li><a href="../sub/sub.html">칼/도마</a></li>
+                          <li><a href="../sub/sub.html">제빵도구</a></li>
+                          <li><a href="../sub/sub.html">주방 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">냅킨/냅킨홀더</a></li>
+                          <li><a href="../sub/sub.html">어린이 식기</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb09">
+                        <a href="#!" class="lnb_title">주방가구</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">주방 시스템</a></li>
+                          <li><a href="../sub/sub.html">주방 부속품</a></li>
+                          <li><a href="../sub/sub.html">주방 팬트리</a></li>
+                          <li><a href="../sub/sub.html">주방 벽수납</a></li>
+                          <li><a href="../sub/sub.html">주방 조리대</a></li>
+                          <li><a href="../sub/sub.html">주방 가전</a></li>
+                          <li><a href="../sub/sub.html">주방 아일랜드/카트</a></li>
+                          <li><a href="../sub/sub.html">주방 손잡이</a></li>
+                          <li><a href="../sub/sub.html">주방 조명</a></li>
+                          <li><a href="../sub/sub.html">주방 싱크대/수도꼭지</a></li>
+                          <li><a href="../sub/sub.html">주방 벽패널</a></li>
+                          <li><a href="../sub/sub.html">주방 모듈형</a></li>
+                          <li><a href="../sub/sub.html">주방 도어/서랍앞판</a></li>
+                          <li><a href="../sub/sub.html">주방 캐비넷</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb09">
+                        <a href="#!" class="lnb_title">수납/정리</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">책장/선반유닛</a></li>
+                          <li><a href="../sub/sub.html">수납 솔루션 시스템</a></li>
+                          <li><a href="../sub/sub.html">수납장/장식장</a></li>
+                          <li><a href="../sub/sub.html">TV/멀티미디어가구</a></li>
+                          <li><a href="../sub/sub.html">서랍장/서랍유닛</a></li>
+                          <li><a href="../sub/sub.html">옷장</a></li>
+                          <li><a href="../sub/sub.html">소형 수납/정리</a></li>
+                          <li><a href="../sub/sub.html">거실장/찬장/콘솔테이블</a></li>
+                          <li><a href="../sub/sub.html">후크/벽수납</a></li>
+                          <li><a href="../sub/sub.html">스탠드 옷걸이/신발수납</a></li>
+                          <li><a href="../sub/sub.html">이동식 선반</a></li>
+                          <li><a href="../sub/sub.html">가방</a></li>
+                          <li><a href="../sub/sub.html">이동 보조상품</a></li>
+                          <li><a href="../sub/sub.html">벽선반</a></li>
+                          <li><a href="../sub/sub.html">슬라이딩도어 시스템</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb10">
+                        <a href="#!" class="lnb_title">욕실</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">욕실 세면대하부장</a></li>
+                          <li><a href="../sub/sub.html">욕실 용품</a></li>
+                          <li><a href="../sub/sub.html">욕실 수납</a></li>
+                          <li><a href="../sub/sub.html">욕실 거울</a></li>
+                          <li><a href="../sub/sub.html">욕실 세탁용품</a></li>
+                          <li><a href="../sub/sub.html">욕실 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">욕실 조명</a></li>
+                          <li><a href="../sub/sub.html">욕실 세면대세트</a></li>
+                          <li><a href="../sub/sub.html">욕실 스툴/벤치</a></li>
+                          <li><a href="../sub/sub.html">욕실 세면기</a></li>
+                          <li><a href="../sub/sub.html">욕실 샤워기</a></li>
+                          <li><a href="../sub/sub.html">욕실 수도꼭지</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb11">
+                        <a href="#!" class="lnb_title">텍스타일</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="../sub/sub.html">침구</a></li>
+                          <li><a href="../sub/sub.html">커튼/블라인드</a></li>
+                          <li><a href="../sub/sub.html">쿠션/쿠션커버</a></li>
+                          <li><a href="../sub/sub.html">어린이 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">야외용 쿠션</a></li>
+                          <li><a href="../sub/sub.html">담요/스로우</a></li>
+                          <li><a href="../sub/sub.html">테이블 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">욕실 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">패브릭/재봉용품</a></li>
+                          <li><a href="../sub/sub.html">주방 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">영유아 텍스타일</a></li>
+                          <li><a href="../sub/sub.html">목욕가운/판쵸우의</a></li>
+                          <li><a href="../sub/sub.html">의자패드</a></li>
+                          <li><a href="../sub/sub.html">러그</a></li>
+                        </ul>
+                      </li>
+                    </ul><!--content_wrap-->
+                  </div><!--content_menu-->
+                  <div class="gnb_idea">
+                    <h3 class="content_title eng">IDEA</h3>
+                    <div class="link_wrap">
+                      <a href="#!" class="idea_link">
+                        <img src="../img/menu/ikea_image/menu_idea_01.png" alt="img">
+                      </a>
+                      <a href="#!" class="idea_link">
+                        <img src="../img/menu/ikea_image/menu_idea_02.png" alt="img">
+                      </a>
+                    </div>
+                  </div><!--gnb_idea-->
+                </div><!--content_inner-->
+              </div><!--gnb_content-->
+            </div><!--menu_name-->
+          </li>
+          <li>
+            <a href="#!" class="menu_name">인기제품&신제품</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">할인 중</a>
+          </li>
+        </ul>
+        <h1 class="logo">
+          <a href="../index.html"><img src="../img/logo_white.png" alt="logo"></a>
+        </h1>
+        <ul class="gnb_right">
+          <li>
+            <a href="#!" class="menu_name">온라인 쇼룸</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">브랜드</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">이케아 스토리</a>
+          </li>
+        </ul>
+        </ul>
+      </div> 
+    </div><!--header_bottom-->
+  </header><!--header-->
+  <div class="nav_indi">
+    <div class="inner">
+      <a href="../index.html">홈</a>
+      <a href="#">가구</a>
+    </div>
+  </div><!--nav_indi-->
+  <h2 class="page_title">가구</h2>
+  <ul class="tab_link">
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu01.png" alt="">
+        <span class="title">게임용가구</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu02.png" alt="">
+        <span class="title">가구세트</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu03.png" alt="">
+        <span class="title">침대</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu04.png" alt="">
+        <span class="title">소파</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu05.png" alt="">
+        <span class="title">책장/선반유닛</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu06.png" alt="">
+        <span class="title">식탁/책상</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu07.png" alt="">
+        <span class="title">수납장/장식장</span>
+      </a>
+    </li>
+    <li>
+      <a class="tab" href="../sub/sub.html">
+        <img src="../img/event_page/sub_menu/sub_menu08.png" alt="">
+        <span class="title">TV/멀티미디어가구</span>
+      </a>
+    </li>
+  </ul><!--tab_link-->
+  <section class="teaser teaser_01">
+    <h3 class="sec_title">나만의 스타일과 욕구에 맞는 아늑한 휴식 공간</h3>
+    <p class="sec_sub">휴식 공간이라고 하면 어떤 모습이 떠오르시나요? <br>
+      IKEA의 다양한 의자 제품을 살펴 보고 나만을 위한 휴식처에 맞는 재료를 찾아보세요.
+    </p>
+    <div class="container">
+      <a href="../sub/detail/detail.html" class="focus_img focus_img01 on">
+        <p class="info">
+          <span class="bold">ULRIKSBERG 울릭스베리</span>
+          환상적인 스타일의 암체어로 거실에 새로운 분위기를 만들어보고 싶으세요? 어떤 용도로 필요하든지 집안에 다양한 스타일과 편안함을 선사할 암체어를 선택해보세요.
+        </p>
+      </a>
+      <a href="../sub/detail/detail.html" class="focus_img focus_img02">
+        <p class="info">
+          <span class="bold">STRANDMON 스트란드몬</span>
+          여분의 커버가 있으면 소파를 좋은 컨디션으로 더 오래 사용할 수 있고, 새로운 소파를 사지 않아도 분위기를 바꿀 수 있어요. IKEA는 더 지속가능한 출처에서 공급받은 면을 사용해 커버를 제작합니다. 재활용되었거나 더 적은 자원으로 생산한 소재임을 뜻하죠. 지속가능하고 오래도록 쓸 수 있습니다.
+        </p>
+      </a>
+      <a href="../sub/detail/detail.html" class="focus_img focus_img03">
+        <p class="info">
+          <span class="bold">MUREN 무렌</span>
+          바쁜 일상 속에서 IKEA 리클라이너는 온전한 나만의 시간을 가질 수 있는 공간을 선사합니다. 빌트인 된 풋스툴과 조절식 등받이가 있어 편하게 누워 쉴 수 있어요. 집안 대부분의 방에 잘 맞는 사이즈라 독서나 게임, 한가한 오후의 낮잠을 즐기는 데 활용할 수 있답니다.
+        </p>
+      </a>
+      <div class="teaser_tab">
+        <div class="tab tab01">암체어</div>
+        <div class="tab tab02">윙체어 슬립커버</div>
+        <div class="tab tab03">리클라이너</div>
+      </div>
+    </div>
+  </section><!--teaser_01-->
+  <section class="teaser teaser_02">
+    <h3 class="sec_title">공간이 편해야 몸도 마음도 편해지는 법</h3>
+    <p class="sec_sub">침실 분위기가 차분하면 자연스레 숙면도 찾아옵니다. <br>
+      IDANÄS 이다네스 침실 시리즈 제품이 있으면 옷과 잡동사니를 깔끔하게 정리할 수 있고, 또 침실에 안정감을 더해줘요.
+    </p>
+    <div class="container">
+      <a href="../sub/detail/detail.html" class="focus_img focus_img01 on">
+        <p class="info">
+          <span class="bold">IDANÄS 이다네스</span>
+          자신의 옷과 공간에 적절하면서도 마음에 드는 서랍장이 있다면 추운 날 아침에 일어나 쉽게 양말을 찾아 신을 수 있을 거예요. IKEA의 서랍장은 옷장에 잘 어울리는 스타일과 집안 공간에 매치할 수 있는 다양한 사이즈로 만나보실 수 있어요. 좁은 복도에는 키 큰 서랍장을 활용해보세요.
+        </p>
+      </a>
+      <a href="../sub/detail/detail.html" class="focus_img focus_img02">
+        <p class="info">
+          <span class="bold">IDANÄS 이다네스</span>
+          옷을 종류별로 깔끔하게 정리하고 쉽게 찾을 수 있는 심플 솔루션. IKEA의 독립형 옷장은 미닫이 또는 여닫이도어 제품으로 폭넓게 구성되어 있어요. 어떤 공간이나 스타일이든 잘 어울리는 여러 가지 사이즈와 디자인, 목재를 포함한 다양한 소재와 조절식 선반 등의 스마트한 아이디어가 들어있죠.
+        </p>
+      </a>
+      <a href="../sub/detail/detail.html" class="focus_img focus_img03">
+        <p class="info">
+          <span class="bold">IDANÄS 이다네스</span>
+          클래식한 멋과 최신식 실용성을 갖춘 가구가 필요하신가요? IDANÄS 이다네스 침실 시리즈 알아보기 옷장, 침대, 서랍장을 포함해 차분하고 정돈된 꿈의 침실을 만들어줄 가구들을 소개합니다.
+        </p>
+      </a>
+      <div class="teaser_tab">
+        <div class="tab tab01">서랍장</div>
+        <div class="tab tab02">옷장</div>
+        <div class="tab tab03">침대프레임</div>
+      </div>
+    </div>
+  </section><!--teaser_02-->
+  <section class="event_banner">
+    <div class="left_area">
+      <h3 class="sec_title">미니멀한 침실을 위한 세련된 수납 아이디어</h3>
+      <p class="sec_desc">주변에 잘 어울리는 도어를 도어형 수납장에 달아 벽에 녹아들게 하거나, 커튼이나 담요를 달아 오픈 수납장을 감출 수 있어 개성을 표현할 수 있는 공간이 더 늘어나요.</p>
+      <a class="banner_btn">숨겨진 수납공간에 대해 자세히 알아보기</a>
+    </div>
+    <div class="right_area"></div>
+  </section><!--event_banner-->
+  <section class="accordion_slide">
+    <div class="acco acco_01">
+      <p class="acco_title eng">GUEST</p>
+      <div class="inner_area">
+        <div class="text_box">
+          <p class="title">아늑한 게스트룸과 공예방을 하나로</p>
+          <p class="desc">소박한 분위기의 이 게스트룸은 친구나 가족이 언제든 내 집처럼 편안하게 머물 수 있는 공간이에요. 손님이 없을 때는 취미나 공예방으로 활용할 수도 있죠. 편안한 텍스타일, 풍부한 수납공간과 다목적 가구로 채워 환대의 마음이 느껴지는 방이에요.</p>
+          <a class="acco_btn" href="#!">모든 데이베드 보러가기</a>
+        </div>
+      </div>
+    </div>
+    <div class="acco acco_02">
+      <p class="acco_title eng">RELAXED</p>
+      <div class="inner_area">
+        <div class="text_box">
+          <p class="title">편안한 거실과 침실의 콤보</p>
+          <p class="desc">거실을 침실로, 혹은 침실을 거실로 바꾸는 일은 생각보다 간단해요. 소파를 침대로 바꿀 수 있고 암막블라인드가 창문에 걸려 있으며 수납장에 옷을 보관할 수 있다면 말이죠.</p>
+          <a class="acco_btn" href="#!">모든 침구 보러가기</a>
+        </div>
+      </div>
+    </div>
+    <div class="acco acco_03">
+      <p class="acco_title eng">FUN</p>
+      <div class="inner_area">
+        <div class="text_box">
+          <p class="title">언제나 쾌적하고 즐거운 공간</p>
+          <p class="desc">이 스마트하고 스타일리시한 거실은 식사를 즐기고 일도 하다가 손쉽게 침실로도 바꿀 수 있어요. 다목적 가구, 공간 절약형 솔루션, 예술 작품처럼 보이는 스피커를 갖춘 이 아담한 공간에는 휴식과 공부, 놀이에 필요한 모든 것이 있답니다.</p>
+          <a class="acco_btn" href="#!">모든 소파베드 보러가기</a>
+        </div>
+      </div>
+    </div>
+    <div class="acco acco_04">
+      <p class="acco_title eng">STYLISH</p>
+      <div class="inner_area">
+        <div class="text_box">
+          <p class="title">스타일리시한 거실과 침실을 하나로</p>
+          <p class="desc">편안하게 쉬고 깔끔하게 정리할 수 있는 근사한 작은 원룸에서 아이디어를 얻어보세요. 화면을 스크롤하여 24시간 사용하는 공간을 위한 스마트하고 멋진 아이디어를 확인해보세요.</p>
+          <a class="acco_btn" href="#!">VALLENTUNA 발렌투나 시리즈 보러 가기</a>
+        </div>
+      </div>
+    </div>
+  </section><!--accordion_slide-->
+  <footer class="footer">
+    <div class="footer_top">
+      <ul class="footer_gnb_top">
+        <li><a href="#!">개인정보처리방침</a></li>
+        <li><a href="#!">쿠키 정책</a></li>
+        <li><a href="#!">쿠키 설정</a></li>
+        <li><a href="#!">웹사이트이용약관</a></li>
+        <li><a href="#!">Responsible disclosure</a></li>
+      </ul>
+    </div><!--footer_top-->
+    <div class="inner_footer">
+      <div class="footer_top_menu">
+        <div class="logo_box">
+          <a href="#!" class="footer_logo">
+            <img src="../img/footer_logo.png" alt="logo">
+          </a>
+        </div>
+        <ul class="footer_menu footer_menu01">
+          <li class="title">고객문의</li>
+          <li class="lnb"><a href="#!">고객지원</a></li>
+          <li class="lnb"><a href="#!">자주 묻는 질문</a></li>
+          <li class="lnb"><a href="#!">문의하기</a></li>
+          <li class="lnb"><a href="#!">배송조회</a></li>
+          <li class="lnb"><a href="#!">교환환불</a></li>
+          <li class="lnb"><a href="#!">품질보증</a></li>
+          <li class="lnb"><a href="#!">제품리콜</a></li>
+          <li class="lnb"><a href="#!">피드백</a></li>
+          <li class="lnb"><a href="#!">부품 신청</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu02">
+          <li class="title">쇼핑하기</li>
+          <li class="lnb"><a href="#!">쇼핑하기</a></li>
+          <li class="lnb"><a href="#!">전화 주문</a></li>
+          <li class="lnb"><a href="#!">IKEA for Business</a></li>
+          <li class="lnb"><a href="#!">셀프 플래닝</a></li>
+          <li class="lnb"><a href="#!">IKEA 모바일 앱</a></li>
+          <li class="lnb"><a href="#!">제품 사용 팁/가이드</a></li>
+          <li class="lnb"><a href="#!">제품 구매 가이드</a></li>
+          <li class="lnb"><a href="#!">결제 옵션</a></li>
+          <li class="lnb"><a href="#!">기프트 카드</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu03">
+          <li class="title">서비스</li>
+          <li class="lnb"><a href="#!">IKEA 서비스</a></li>
+          <li class="lnb"><a href="#!">배송 서비스</a></li>
+          <li class="lnb"><a href="#!">조립 서비스</a></li>
+          <li class="lnb"><a href="#!">설치 서비스</a></li>
+          <li class="lnb"><a href="#!">주방 서비스</a></li>
+          <li class="lnb"><a href="#!">플래닝 서비스</a></li>
+          <li class="lnb"><a href="#!">인테리어 디자인 서비스</a></li>
+          <li class="lnb"><a href="#!">바이백 서비스</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu04">
+          <li class="title">IKEA 이야기</li>
+          <li class="lnb"><a href="#!">브랜드 소개</a></li>
+          <li class="lnb"><a href="#!">집에서의 삶</a></li>
+          <li class="lnb"><a href="#!">지속가능한 생활</a></li>
+          <li class="lnb"><a href="#!">내가 아끼는 집, 나를 아끼는 집</a></li>
+          <li class="lnb"><a href="#!">뉴스룸</a></li>
+          <li class="lnb"><a href="#!">채용정보</a></li>
+        </ul>
+        <ul class="footer_menu05">
+          <li class="title">IKEA Family</li>
+          <li class="desc">
+            지금 IKEA Family에 무료로 가입하고<br>
+            다양한 멤버 전용 혜택을 누리세요.
+          </li>
+          <li class="button">
+            <a href="#!">IKEA Family 가입하기</a>
+          </li>
+        </ul>
+      </div><!--footer_top_menu-->
+      <div class="footer_bottom_copyright">
+        <div class="sns_box">
+          <a href="https://ko-kr.facebook.com" class="facebook_icon"></a>
+          <a href="https://www.instagram.com/ikeakr/" class="instagram_icon"></a>
+          <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" class="youtube_icon"></a>
+        </div>
+        <p class="copyright01">
+          IKEA 코리아<br>
+          주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점<br>
+          사업자 등록번호 : 106-86-82871 사업자정보확인
+        </p>
+        <p class="copyright02">
+          대표자 : 프레드릭 요한손<br>
+          통신판매업 신고 : 2018-경기광명-0209 / TEL : 1670-4532<br>
+          © Inter IKEA Systems B.V 1999-2022
+        </p>
+      </div><!--footer_bottom_copyright-->
+    </div><!--inner_footer-->
+  </footer><!--footer-->
+  <a href="#!" class="top_navi">
+    <span></span>
+  </a>
+  <section class="shopping_basket">
+    <div class="left_area">
+      <h2 class="section_name">장바구니</h2>
+      <p class="del_notice">총 주문금액이 <span class="bold">₩ 1,000,000</span> 이상일 경우 배송비가 무료입니다.</p>
+      <ul class="product_add">
+        <!-- 추가요소 영역 -->
+      </ul><!--product-->
+    </div><!--left_area-->
+    <div class="right_area">
+      <span class="exit"></span>
+      <p class="order_title">주문 내역</p>
+      <ul class="con cond_01">
+        <li class="name">전체 배송비</li>
+        <li>₩ <span class="price">0</span></li>
+      </ul>
+      <ul class="con cond_02">
+        <li class="name">총 할인 금액</li>
+        <li class="price">- ₩ 0</li>
+      </ul>
+      <ul class="result">
+        <li class="name">총 주문 금액</li>
+        <li>₩ <span class="price">0</span></li>
+        </ul>
+      <span class="order_btn">
+        결제하기
+      </span>
+      <span class="back_btn">
+        나가기
+      </span>
+      <form action="" class="coupon" name="coupon">
+        <p class="title">쿠폰 입력<span class="arrow"></span></p>
+        <div class="input_box">
+          <p class="notice">주문당 1개의 쿠폰만 사용할 수 있습니다.</p>
+          <p class="desc">쿠폰 코드 입력</p>
+          <input type="text" class="coupon_input">
+          <input type="submit" value="쿠폰 적용" class="coupon_submit">
+        </div>
+      </form>
+    </div><!--right_area-->
+  </section><!--shopping_basket-->
+  <section class="wish_list">
+    <h2 class="section_name">나의 위시리스트</h2>
+    <span class="back_btn exit"></span>
+    <div class="product_wrap">
+      <ul class="product_list">
+        <!-- 추가요소 영역 -->
+      </ul>
+    </div>
+    <div class="btn_box">
+      <span class="all_check">전체선택</span>
+      <span class="all_not">전체선택 해제</span>
+      <span class="check_del">선택항목 삭제</span>
+    </div>
+  </section><!--wish_list-->
+</body>
+</html>

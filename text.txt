@@ -1,0 +1,15 @@
+:root {
+  --main_color: #333;
+  --sub_color01: #000;
+  --sub_color02: #fff;
+  --point_color01: #264989;
+  --point_color02: #FECA15;
+
+  --font_size_small01: 12px;
+  --font_size_small02: 13px;
+  --font_size_small03: 14px;
+  --font_size_large01: 18px;
+  --font_size_large02: 20px;
+  --font_size_large03: 24px;
+  --font_size_large04: 30px;
+}

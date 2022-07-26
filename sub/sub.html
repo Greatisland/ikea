@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA</title>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!--basic-->
+  <script src="../js/common.js" defer></script>
+  <script src="../js/sub.js" defer></script>
+  <script src="../js/modal.js" defer></script>
+  <link rel="stylesheet" href="../css/sub.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_top">
+      <ul class="gnb_login">
+        <li class="icon_wrap">
+          <form action="" name="search" class="search">
+            <input type="search" class="search_bar" placeholder="검색어 입력">
+            <button type="submit" class="search_icon"></button>
+          </form>
+          <a href="#!" class="bag_icon"></a>
+          <a href="#!" class="heart_icon"></a>
+        </li>
+        <li><a href="#!">로그인</a></li>
+        <li><a href="#!">회원가입</a></li>
+      </ul>
+    </div>
+    <div class="header_bottom">
+      <div class="header_inner">
+        <ul class="gnb_left">
+          <li class="lnb_btn">
+            <div class="menu_name">
+              <span class="ham_btn">
+                <span class="line_01"></span>
+                <span class="line_02"></span>
+                <span class="line_03"></span>
+              </span>
+              모든 제품
+              <div class="gnb_content">
+                <div class="content_inner">
+                  <div class="content_menu">
+                    <h3 class="content_title eng">CATEGORY</h3>
+                    <ul class="content_wrap">
+                      <li class="lnb lnb01 on">
+                        <a href="cat_sub.html" class="lnb_title">IKEA 여름상품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">정원/가드닝</a></li>
+                          <li><a href="#!">장식 조명</a></li>
+                          <li><a href="#!">야외활동/피크닉</a></li>
+                          <li><a href="#!">여름 장식/데코</a></li>
+                          <li><a href="#!">여름 파티</a></li>
+                          <li><a href="#!">여름 텍스타일</a></li>
+                          <li><a href="#!">바비큐</a></li>
+                          <li><a href="#!">여름 시즌푸드</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb02">
+                        <a href="cat_sub.html" class="lnb_title">홈스마트</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">스마트 조명</a></li>
+                          <li><a href="#!">스마트 전동 블라인드</a></li>
+                          <li><a href="#!">스마트 컨트롤 시스템</a></li>
+                          <li><a href="#!">와이파이 스피커</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb03">
+                        <a href="cat_sub.html" class="lnb_title">가구</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">게임용가구</a></li>
+                          <li><a href="#!">가구세트</a></li>
+                          <li><a href="#!">침대</a></li>
+                          <li><a href="#!">소파</a></li>
+                          <li><a href="#!">책장/선반유닛</a></li>
+                          <li><a href="#!">식탁/책상</a></li>
+                          <li><a href="#!">수납장/장식장</a></li>
+                          <li><a href="#!">TV/멀티미디어가구</a></li>
+                          <li><a href="#!">서랍장/서랍유닛</a></li>
+                          <li><a href="#!">옷장</a></li>
+                          <li><a href="#!">의자</a></li>
+                          <li><a href="#!">야외용 가구</a></li>
+                          <li><a href="#!">거실장/찬장/콘솔테이블</a></li>
+                          <li><a href="#!">어린이 가구</a></li>
+                          <li><a href="#!">칸막이/파티션</a></li>
+                          <li><a href="#!">이동식 선반</a></li>
+                          <li><a href="#!">바테이블/의자</a></li>
+                          <li><a href="#!">암체어/카우치/</a></li>
+                          <li><a href="#!">카페가구</a></li>
+                          <li><a href="#!">영유아 가구</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb04">
+                        <a href="cat_sub.html" class="lnb_title">홈오피스</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">사무용의자</a></li>
+                          <li><a href="#!">책상/컴퓨터책상</a></li>
+                          <li><a href="#!">책상/의자 세트</a></li>
+                          <li><a href="#!">서랍유닛</a></li>
+                          <li><a href="#!">책장/선반유닛</a></li>
+                          <li><a href="#!">수납유닛/수납장</a></li>
+                          <li><a href="#!">칸막이/파티션</a></li>
+                          <li><a href="#!">작업등</a></li>
+                          <li><a href="#!">케이블/충전기</a></li>
+                          <li><a href="#!">서류/미디어정리용품</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb05">
+                        <a href="cat_sub.html" class="lnb_title">침대/매트리스</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">침대</a></li>
+                          <li><a href="#!">침구</a></li>
+                          <li><a href="#!">매트리스</a></li>
+                          <li><a href="#!">침대협탁</a></li>
+                          <li><a href="#!">매트리스 베이스</a></li>
+                          <li><a href="#!">침대헤드</a></li>
+                          <li><a href="#!">침대수납</a></li>
+                          <li><a href="#!">침대갈빗살</a></li>
+                          <li><a href="#!">침대다리</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb05">
+                        <a href="cat_sub.html" class="lnb_title">어린이 IKEA</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">어린이</a></li>
+                          <li><a href="#!">영유아</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb06">
+                        <a href="cat_sub.html" class="lnb_title">조명</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">일반 조명</a></li>
+                          <li><a href="#!">장식 조명</a></li>
+                          <li><a href="#!">시스템 조명</a></li>
+                          <li><a href="#!">스마트 조명</a></li>
+                          <li><a href="#!">야외용 조명</a></li>
+                          <li><a href="#!">욕실 조명</a></li>
+                          <li><a href="#!">LED전구</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb07">
+                        <a href="cat_sub.html" class="lnb_title">아웃도어/야외용품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">야외용 가구</a></li>
+                          <li><a href="#!">야외용 화분/식물</a></li>
+                          <li><a href="#!">야외용 수납</a></li>
+                          <li><a href="#!">야외용 쿠션</a></li>
+                          <li><a href="#!">야외활동/피크닉</a></li>
+                          <li><a href="#!">야외용 액세서리</a></li>
+                          <li><a href="#!">조립식 마루/데크</a></li>
+                          <li><a href="#!">파라솔/가제보</a></li>
+                          <li><a href="#!">야외용 조명</a></li>
+                          <li><a href="#!">바비큐</a></li>
+                          <li><a href="#!">야외용 주방</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb08">
+                        <a href="cat_sub.html" class="lnb_title">주방용품</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">식품보관/정리</a></li>
+                          <li><a href="#!">디너웨어</a></li>
+                          <li><a href="#!">서빙웨어</a></li>
+                          <li><a href="#!">커피/차</a></li>
+                          <li><a href="#!">테이블 텍스타일</a></li>
+                          <li><a href="#!">조리도구</a></li>
+                          <li><a href="#!">유리제품/유리병</a></li>
+                          <li><a href="#!">요리도구</a></li>
+                          <li><a href="#!">식기세척용품</a></li>
+                          <li><a href="#!">식기도구</a></li>
+                          <li><a href="#!">칼/도마</a></li>
+                          <li><a href="#!">제빵도구</a></li>
+                          <li><a href="#!">주방 텍스타일</a></li>
+                          <li><a href="#!">냅킨/냅킨홀더</a></li>
+                          <li><a href="#!">어린이 식기</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb09">
+                        <a href="cat_sub.html" class="lnb_title">주방가구</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">주방 시스템</a></li>
+                          <li><a href="#!">주방 부속품</a></li>
+                          <li><a href="#!">주방 팬트리</a></li>
+                          <li><a href="#!">주방 벽수납</a></li>
+                          <li><a href="#!">주방 조리대</a></li>
+                          <li><a href="#!">주방 가전</a></li>
+                          <li><a href="#!">주방 아일랜드/카트</a></li>
+                          <li><a href="#!">주방 손잡이</a></li>
+                          <li><a href="#!">주방 조명</a></li>
+                          <li><a href="#!">주방 싱크대/수도꼭지</a></li>
+                          <li><a href="#!">주방 벽패널</a></li>
+                          <li><a href="#!">주방 모듈형</a></li>
+                          <li><a href="#!">주방 도어/서랍앞판</a></li>
+                          <li><a href="#!">주방 캐비넷</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb09">
+                        <a href="cat_sub.html" class="lnb_title">수납/정리</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">책장/선반유닛</a></li>
+                          <li><a href="#!">수납 솔루션 시스템</a></li>
+                          <li><a href="#!">수납장/장식장</a></li>
+                          <li><a href="#!">TV/멀티미디어가구</a></li>
+                          <li><a href="#!">서랍장/서랍유닛</a></li>
+                          <li><a href="#!">옷장</a></li>
+                          <li><a href="#!">소형 수납/정리</a></li>
+                          <li><a href="#!">거실장/찬장/콘솔테이블</a></li>
+                          <li><a href="#!">후크/벽수납</a></li>
+                          <li><a href="#!">스탠드 옷걸이/신발수납</a></li>
+                          <li><a href="#!">이동식 선반</a></li>
+                          <li><a href="#!">가방</a></li>
+                          <li><a href="#!">이동 보조상품</a></li>
+                          <li><a href="#!">벽선반</a></li>
+                          <li><a href="#!">슬라이딩도어 시스템</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb10">
+                        <a href="cat_sub.html" class="lnb_title">욕실</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">욕실 세면대하부장</a></li>
+                          <li><a href="#!">욕실 용품</a></li>
+                          <li><a href="#!">욕실 수납</a></li>
+                          <li><a href="#!">욕실 거울</a></li>
+                          <li><a href="#!">욕실 세탁용품</a></li>
+                          <li><a href="#!">욕실 텍스타일</a></li>
+                          <li><a href="#!">욕실 조명</a></li>
+                          <li><a href="#!">욕실 세면대세트</a></li>
+                          <li><a href="#!">욕실 스툴/벤치</a></li>
+                          <li><a href="#!">욕실 세면기</a></li>
+                          <li><a href="#!">욕실 샤워기</a></li>
+                          <li><a href="#!">욕실 수도꼭지</a></li>
+                        </ul>
+                      </li>
+                      <li class="lnb lnb11">
+                        <a href="cat_sub.html" class="lnb_title">텍스타일</a>
+                        <i class="lnb_arrow"></i>
+                        <ul class="lnb_list">
+                          <li><a href="#!">침구</a></li>
+                          <li><a href="#!">커튼/블라인드</a></li>
+                          <li><a href="#!">쿠션/쿠션커버</a></li>
+                          <li><a href="#!">어린이 텍스타일</a></li>
+                          <li><a href="#!">야외용 쿠션</a></li>
+                          <li><a href="#!">담요/스로우</a></li>
+                          <li><a href="#!">테이블 텍스타일</a></li>
+                          <li><a href="#!">욕실 텍스타일</a></li>
+                          <li><a href="#!">패브릭/재봉용품</a></li>
+                          <li><a href="#!">주방 텍스타일</a></li>
+                          <li><a href="#!">영유아 텍스타일</a></li>
+                          <li><a href="#!">목욕가운/판쵸우의</a></li>
+                          <li><a href="#!">의자패드</a></li>
+                          <li><a href="#!">러그</a></li>
+                        </ul>
+                      </li>
+                    </ul><!--content_wrap-->
+                  </div><!--content_menu-->
+                  <div class="gnb_idea">
+                    <h3 class="content_title eng">IDEA</h3>
+                    <div class="link_wrap">
+                      <a href="#!" class="idea_link">
+                        <img src="../img/menu/ikea_image/menu_idea_01.png" alt="img">
+                      </a>
+                      <a href="#!" class="idea_link">
+                        <img src="../img/menu/ikea_image/menu_idea_02.png" alt="img">
+                      </a>
+                    </div>
+                  </div><!--gnb_idea-->
+                </div><!--content_inner-->
+              </div><!--gnb_content-->
+            </div><!--menu_name-->
+          </li>
+          <li>
+            <a href="#!" class="menu_name">인기제품&신제품</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">할인 중</a>
+          </li>
+        </ul>
+        <h1 class="logo">
+          <a href="../index.html"><img src="../img/logo_white.png" alt="logo"></a>
+        </h1>
+        <ul class="gnb_right">
+          <li>
+            <a href="#!" class="menu_name">온라인 쇼룸</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">브랜드</a>
+          </li>
+          <li>
+            <a href="#!" class="menu_name">이케아 스토리</a>
+          </li>
+        </ul>
+        </ul>
+      </div> 
+    </div><!--header_bottom-->
+  </header><!--header-->
+  <div class="nav_indi">
+    <div class="inner">
+      <a href="../index.html">홈</a>
+      <a href="../sub/cat_sub.html">가구</a>
+      <a href="#">가구세트</a>
+    </div>
+  </div><!--nav_indi-->
+  <h2 class="page_title">가구세트</h2>
+  <form action="" class="filter_tab" name="filter_tab">
+    <ul class="filter_options">
+      <li class="option option_menu">
+        <span class="option_title">정렬<strong class="arrow"></strong></span>
+        <div class="option_lists option_lists01">
+          <label for="line01" class="option_list">베스트 매치<input type="radio" id="line01" name="line" class="line" checked></label>
+          <label for="line02" class="option_list">낮은 가격 순<input type="radio" id="line02" name="line" class="line"></label>
+          <label for="line03" class="option_list">높은 가격 순<input type="radio" id="line03" name="line" class="line"></label>
+          <label for="line04" class="option_list">최신 제품 순<input type="radio" id="line04" name="line" class="line"></label>
+        </div>
+      </li>
+      <li class="option option_menu">
+        <span class="option_title">가격<strong class="arrow"></strong></span>
+        <div class="option_lists option_lists02">
+          <label for="price01" class="option_list">₩200,000 ~ ₩400,000<input type="checkbox" data-price="0" data-add="₩200,000 ~ ₩400,000" id="price01" name="price" class="filter_check price"></label>
+          <label for="price02" class="option_list">₩400,000 ~ ₩600,000<input type="checkbox" data-price="1" data-add="₩400,000 ~ ₩600,000" id="price02" name="price" class="filter_check price"></label>
+          <label for="price03" class="option_list">₩600,000 ~<input type="checkbox" data-price="2" data-add="₩600,000 ~ " id="price03" name="price" class="filter_check price"></label>
+        </div>
+      </li>
+      <li class="option option_menu">
+        <span class="option_title">시리즈<strong class="arrow"></strong></span>
+        <div class="option_lists option_lists03">
+          <label for="Series01" class="option_list">MALM/말름 시리즈<input type="checkbox" data-name="MALM 말름" data-add="MALM 말름" id="Series01" name="Series1" class="filter_check Series"></label>
+          <label for="Series02" class="option_list">HAUGA/하우가 침실시리즈<input type="checkbox" data-name="HAUGA 하우가" data-add="HAUGA 하우가" id="Series02" name="Series" class="filter_check Series"></label>
+          <label for="Series03" class="option_list">SONGESAND/송에산드 시리즈<input type="checkbox" data-name="SONGESAND 송에산드" data-add="SONGESAND 송에산드" id="Series03" name="Series" class="filter_check Series"></label>
+          <label for="Series04" class="option_list">HEMNES/헴네스 침실 시리즈<input type="checkbox" data-name="HEMNES 헴네스" data-add="HEMNES 헴네스" id="Series04" name="Series" class="filter_check Series"></label>
+          <label for="Series05" class="option_list">BRIMNES/브림네스 시리즈<input type="checkbox" data-name="BRIMNES 브림네스" data-add="BRIMNES 브림네스" id="Series05" name="Series" class="filter_check Series"></label>
+          <label for="Series06" class="option_list">GURSKEN/구르스켄 시리즈<input type="checkbox" data-name="GURSKEN 구르스켄" data-add="GURSKEN 구르스켄" id="Series06" name="Series" class="filter_check Series"></label>
+        </div>
+      </li>
+      <li class="option option_menu">
+        <span class="option_title">스타일<strong class="arrow"></strong></span>
+        <div class="option_lists option_lists04">
+          <label for="style01" class="option_list">모던<input type="checkbox" data-style="modern" data-add="모던" id="style01" name="style" class="filter_check style"></label>
+          <label for="style02" class="option_list">인터내셔널 모던<input type="checkbox" data-style="Inter" data-add="인터내셔널 모던" modern id="style02" name="style" class="filter_check style"></label>
+          <label for="style03" class="option_list">스칸디나비아 모던<input type="checkbox" data-style="Scandi" data-add="스칸디나비아 모던" id="style03" name="style" class="filter_check style"></label>
+          <label for="style04" class="option_list">전통<input type="checkbox" data-style="trandition" data-add="전통" id="style04" name="style" class="filter_check style"></label>
+          <label for="style05" class="option_list">멀티<input type="checkbox" data-style="multi" data-add="멀티" id="style05" name="style" class="filter_check style"></label>
+        </div>
+      </li>
+      <li class="option option_menu">
+        <span class="option_title">색상<strong class="arrow"></strong></span>
+        <div class="option_lists option_lists05">
+          <label for="color01" class="option_list">화이트<input type="checkbox" data-color="white" data-add="화이트" id="color01" name="color" class="filter_check color"></label>
+          <label for="color02" class="option_list">베이지<input type="checkbox" data-color="beige" data-add="베이지" id="color02" name="color" class="filter_check color"></label>
+          <label for="color03" class="option_list">브라운<input type="checkbox" data-color="brown" data-add="브라운" id="color03" name="color" class="filter_check color"></label>
+          <label for="color04" class="option_list">블랙<input type="checkbox" data-color="black" data-add="블랙" id="color04" name="color" class="filter_check color"></label>
+        </div>
+      </li>
+      <li class="option">
+        <label for="new" class="option_title">신제품<input type="checkbox" data-add="신제품" data-release="4" id="new" name="new" class="filter_check new"></label>
+      </li>
+      <li class="option">
+        <label for="online" class="option_title">온라인 구매 가능<input type="checkbox" data-add="온라인 구매 가능" data-online="on" id="online" name="online" class="filter_check online"></label>
+      </li>
+    </ul>
+    <ul class="filter_thumb">
+      <li class="thumb_btn prod_btn on">제품</li>
+      <li class="thumb_btn space_btn">공간</li>
+    </ul>
+  </form><!--filter_tab-->
+  <div class="filter_del">
+    <!-- 생성 버튼 영역 -->
+  </div>
+  <section class="product_grid">
+    <div class="product product01" 
+    data-num="1"
+    data-price="378900"
+    data-name="HAUGA 하우가"
+    data-color="white"
+    data-style="trandition"
+    data-release="44"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod01.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod01_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구2종, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">378,900</span></p>
+    </div>
+    <div class="product product02" 
+    data-num="2"
+    data-price="228900"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="modern"
+    data-release="43"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod02.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod02_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구2종, 화이트</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">228,900</span></p>
+    </div>
+    <div class="product product03" 
+    data-num="3"
+    data-price="877900"
+    data-name="HEMNES 헴네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="42"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod03.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod03_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HEMNES 헴네스</p>
+      <p class="product_desc">침실가구, 3종, 화이트 스테인, 80x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">877,900</span></p>
+    </div>
+    <div class="product product04" 
+    data-num="4"
+    data-price="856800"
+    data-name="HAUGA 하우가"
+    data-color="white"
+    data-style="trandition"
+    data-release="41"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod04.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod04_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 5종, 로팔레트 베이지/화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">856,800</span></p>
+    </div>
+    <div class="product product05" 
+    data-num="5"
+    data-price="378800"
+    data-name="HAUGA 하우가"
+    data-color="white"
+    data-style="trandition"
+    data-release="40"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod05.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod05_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 3종</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">378,800</span></p>
+    </div>
+    <div class="product product06" 
+    data-num="6"
+    data-price="872800"
+    data-name="HEMNES 헴네스"
+    data-color="black"
+    data-style="trandition"
+    data-release="39"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod06.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod06_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HEMNES 헴네스</p>
+      <p class="product_desc">침실가구, 4종, 블랙브라운, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">872,800</span></p>
+    </div>
+    <div class="product product07" 
+    data-num="7"
+    data-price="732800"
+    data-name="SONGESAND 송에산드"
+    data-color="white"
+    data-style="trandition"
+    data-release="38"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod07.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod07_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 4종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">732,800</span></p>
+    </div>
+    <div class="product product08" 
+    data-num="8"
+    data-price="952000"
+    data-name="BRIMNES 브림네스"
+    data-color="white"
+    data-style="modern"
+    data-release="37"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod08.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod08_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">BRIMNES 브림네스</p>
+      <p class="product_desc">침실가구, 3종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">952,000</span></p>
+    </div>
+    <div class="product product09" 
+    data-num="9"
+    data-price="822800"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="Scandi"
+    data-release="36"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod09.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod09_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">822,800</span></p>
+    </div>
+    <div class="product product10" 
+    data-num="10"
+    data-price="931800"
+    data-name="SONGESAND 송에산드"
+    data-color="white"
+    data-style="Inter"
+    data-release="35"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod10.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod10_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 5종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">931,800</span></p>
+    </div>
+    <div class="product product11" 
+    data-num="11"
+    data-price="433900"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="Inter"
+    data-release="34"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod11.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod11_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구2종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">433,900</span></p>
+    </div>
+    <div class="product product12" 
+    data-num="12"
+    data-price="513800"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="Inter"
+    data-release="33"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod12.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod12_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 3종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">513,800</span></p>
+    </div>
+    <div class="product product13" 
+    data-num="13"
+    data-price="793000"
+    data-name="BRIMNES 브림네스"
+    data-color="white"
+    data-style="modern"
+    data-release="32"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod13.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod13_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">BRIMNES 브림네스</p>
+      <p class="product_desc">침실가구2종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">793,000</span></p>
+    </div>
+    <div class="product product14" 
+    data-num="14"
+    data-price="233800"
+    data-name="GURSKEN 구르스켄"
+    data-color="beige"
+    data-style="trandition"
+    data-release="31"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod14.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod14_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">GURSKEN 구르스켄</p>
+      <p class="product_desc">침실가구, 3종, 라이트베이지, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">233,800</span></p>
+    </div>
+    <div class="product product15" 
+    data-num="15"
+    data-price="263800"
+    data-name="GURSKEN 구르스켄"
+    data-color="beige"
+    data-style="trandition"
+    data-release="30"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod15.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod15_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">GURSKEN 구르스켄</p>
+      <p class="product_desc">침실가구, 3종, 라이트베이지, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">263,800</span></p>
+    </div>
+    <div class="product product16" 
+    data-num="16"
+    data-price="323700"
+    data-name="GURSKEN 구르스켄"
+    data-color="beige"
+    data-style="trandition"
+    data-release="29"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod16.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod16_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">GURSKEN 구르스켄</p>
+      <p class="product_desc">침실가구, 4종, 라이트베이지, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">323,700</span></p>
+    </div>
+    <div class="product product17" 
+    data-num="17"
+    data-price="228900"
+    data-name="HAUGA 하우가"
+    data-color="white"
+    data-style="trandition"
+    data-release="28"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod17.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod17_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구2종, 화이트</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">228,900</span></p>
+    </div>
+    <div class="product product18" 
+    data-num="18"
+    data-price="308800"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="trandition"
+    data-release="27"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod18.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod18_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 3종, 화이트</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">308,800</span></p>
+    </div>
+    <div class="product product19" 
+    data-num="19"
+    data-price="657800"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="26"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod19.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod19_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 4종, 로팔레트 베이지/화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">657,800</span></p>
+    </div>
+    <div class="product product20" 
+    data-num="20"
+    data-price="328900"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="25"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod20.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod20_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구2종</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">328,900</span></p>
+    </div>
+    <div class="product product21" 
+    data-num="21"
+    data-price="278800"
+    data-name="HAUGA 하우가"
+    data-color="white"
+    data-style="trandition"
+    data-release="24"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod21.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod21_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 3종, 화이트</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">278,800</span></p>
+    </div>
+    <div class="product product22" 
+    data-num="22"
+    data-price="348600"
+    data-name="GURSKEN 구르스켄"
+    data-color="beige"
+    data-style="trandition"
+    data-release="23"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod22.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod22_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">GURSKEN 구르스켄</p>
+      <p class="product_desc">침실가구, 5종, 라이트베이지, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">348,600</span></p>
+    </div>
+    <div class="product product23" 
+    data-num="23"
+    data-price="378800"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="22"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod23.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod23_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 3종, 로팔레트 베이지/화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">378,800</span></p>
+    </div>
+    <div class="product product24" 
+    data-num="24"
+    data-price="328900"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="21"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod24.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod24_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구2종, 로팔레트 베이지/화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">328,900</span></p>
+    </div>
+    <div class="product product25" 
+    data-num="25"
+    data-price="527900"
+    data-name="BRIMNES 브림네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="20"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod25.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod25_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">BRIMNES 브림네스</p>
+      <p class="product_desc">침실가구, 3종, 화이트, 80x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">527,900</span></p>
+    </div>
+    <div class="product product26" 
+    data-num="26"
+    data-price="906800"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="19"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod26.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod26_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 5종, 로팔레트 베이지/화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">906,800</span></p>
+    </div>
+    <div class="product product27" 
+    data-num="27"
+    data-price="922800"
+    data-name="HEMNES 헴네스"
+    data-color="black"
+    data-style="trandition"
+    data-release="18"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod27.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod27_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HEMNES 헴네스</p>
+      <p class="product_desc">침실가구, 4종, 블랙브라운, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">922,800</span></p>
+    </div>
+    <div class="product product28" 
+    data-num="28"
+    data-price="872800"
+    data-name="HEMNES 헴네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="17"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod28.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod28_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HEMNES 헴네스</p>
+      <p class="product_desc">침실가구, 4종, 화이트 스테인, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">872,800</span></p>
+    </div>
+    <div class="product product29" 
+    data-num="29"
+    data-price="922800"
+    data-name="HEMNES 헴네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="16"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod29.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod29_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HEMNES 헴네스</p>
+      <p class="product_desc">침실가구, 4종, 화이트 스테인, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">922,800</span></p>
+    </div>
+    <div class="product product30" 
+    data-num="30"
+    data-price="772800"
+    data-name="SONGESAND 송에산드"
+    data-color="white"
+    data-style="trandition"
+    data-release="15"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod30.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod30_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 4종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">772,800</span></p>
+    </div>
+    <div class="product product31" 
+    data-num="31"
+    data-price="1022000"
+    data-name="BRIMNES 브림네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="14"
+    data-online="off"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod31.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod31_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">BRIMNES 브림네스</p>
+      <p class="product_desc">침실가구, 3종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">1,022,000</span></p>
+    </div>
+    <div class="product product32" 
+    data-num="32"
+    data-price="752800"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="trandition"
+    data-release="13"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod32.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod32_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">752,800</span></p>
+    </div>
+    <div class="product product33" 
+    data-num="33"
+    data-price="971800"
+    data-name="SONGESAND 송에산드"
+    data-color="white"
+    data-style="trandition"
+    data-release="12"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod33.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod33_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 5종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">971,800</span></p>
+    </div>
+    <div class="product product34" 
+    data-num="34"
+    data-price="503900"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="trandition"
+    data-release="11"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod34.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod34_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구2종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">503,900</span></p>
+    </div>
+    <div class="product product35" 
+    data-num="35"
+    data-price="583800"
+    data-name="MALM 말름"
+    data-color="white"
+    data-style="trandition"
+    data-release="10"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod35.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod35_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구3종, 화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">583,800</span></p>
+    </div>
+    <div class="product product36" 
+    data-num="36"
+    data-price="723000"
+    data-name="BRIMNES 브림네스"
+    data-color="white"
+    data-style="trandition"
+    data-release="9"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod36.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod36_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">BRIMNES 브림네스</p>
+      <p class="product_desc">침실가구2종, 화이트, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">723,000</span></p>
+    </div>
+    <div class="product product37" 
+    data-num="37"
+    data-price="822800"
+    data-name="MALM 말름"
+    data-color="beige"
+    data-style="trandition"
+    data-release="8"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod37.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod37_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 화이트스테인 참나무 무늬목, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">822,800</span></p>
+    </div>
+    <div class="product product38" 
+    data-num="38"
+    data-price="902800"
+    data-name="MALM 말름"
+    data-color="beige"
+    data-style="trandition"
+    data-release="7"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod38.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod38_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 화이트스테인 참나무 무늬목, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">902,800</span></p>
+    </div>
+    <div class="product product39" 
+    data-num="39"
+    data-price="732800"
+    data-name="SONGESAND 송에산드"
+    data-color="brown"
+    data-style="trandition"
+    data-release="6"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod39.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod39_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 4종, 브라운, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">732,800</span></p>
+    </div>
+    <div class="product product40" 
+    data-num="40"
+    data-price="822800"
+    data-name="MALM 말름"
+    data-color="brown"
+    data-style="trandition"
+    data-release="5"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod40.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod40_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 블랙브라운, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">822,800</span></p>
+    </div>
+    <div class="product product41" 
+    data-num="41"
+    data-price="902800"
+    data-name="MALM 말름"
+    data-color="black"
+    data-style="trandition"
+    data-release="4"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod41.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod41_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">MALM 말름</p>
+      <p class="product_desc">침실가구, 4종, 블랙브라운, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">902,800</span></p>
+    </div>
+    <div class="product product42" 
+    data-num="42"
+    data-price="931800"
+    data-name="SONGESAND 송에산드"
+    data-color="brown"
+    data-style="trandition"
+    data-release="3"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod42.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod42_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">SONGESAND 송에산드</p>
+      <p class="product_desc">침실가구, 5종, 브라운, 150x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">931,800</span></p>
+    </div>
+    <div class="product product43" 
+    data-num="43"
+    data-price="707800"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="2"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod43.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod43_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 4종, 로팔레트 베이지/화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">707,800</span></p>
+    </div>
+    <div class="product product44" 
+    data-num="44"
+    data-price="428800"
+    data-name="HAUGA 하우가"
+    data-color="beige"
+    data-style="trandition"
+    data-release="1"
+    data-online="on"
+    >
+      <a class="product_img prod_ver on" href="detail/detail.html"><img src="../img/sub_page/prod44.avif" alt="product"></a>
+      <a class="product_img space_ver" href="detail/detail.html"><img src="../img/sub_page/prod44_sp.avif" alt="product"></a>
+      <div class="icon_box">
+        <a href="#!" class="product_icon bag_btn"></a>
+        <a href="#!" class="product_icon heart_btn"></a>
+      </div>
+      <p class="product_title">HAUGA 하우가</p>
+      <p class="product_desc">침실가구, 4종, 로팔레트 베이지/화이트, 180x200 cm</p>
+      <p class="product_price"><span class="price_simbol">￦</span><span class="num_p">428,800</span></p>
+    </div>
+  </section><!--product_grid-->
+  <footer class="footer">
+    <div class="footer_top">
+      <ul class="footer_gnb_top">
+        <li><a href="#!">개인정보처리방침</a></li>
+        <li><a href="#!">쿠키 정책</a></li>
+        <li><a href="#!">쿠키 설정</a></li>
+        <li><a href="#!">웹사이트이용약관</a></li>
+        <li><a href="#!">Responsible disclosure</a></li>
+      </ul>
+    </div><!--footer_top-->
+    <div class="inner_footer">
+      <div class="footer_top_menu">
+        <div class="logo_box">
+          <a href="#!" class="footer_logo">
+            <img src="../img/footer_logo.png" alt="logo">
+          </a>
+        </div>
+        <ul class="footer_menu footer_menu01">
+          <li class="title">고객문의</li>
+          <li class="lnb"><a href="#!">고객지원</a></li>
+          <li class="lnb"><a href="#!">자주 묻는 질문</a></li>
+          <li class="lnb"><a href="#!">문의하기</a></li>
+          <li class="lnb"><a href="#!">배송조회</a></li>
+          <li class="lnb"><a href="#!">교환환불</a></li>
+          <li class="lnb"><a href="#!">품질보증</a></li>
+          <li class="lnb"><a href="#!">제품리콜</a></li>
+          <li class="lnb"><a href="#!">피드백</a></li>
+          <li class="lnb"><a href="#!">부품 신청</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu02">
+          <li class="title">쇼핑하기</li>
+          <li class="lnb"><a href="#!">쇼핑하기</a></li>
+          <li class="lnb"><a href="#!">전화 주문</a></li>
+          <li class="lnb"><a href="#!">IKEA for Business</a></li>
+          <li class="lnb"><a href="#!">셀프 플래닝</a></li>
+          <li class="lnb"><a href="#!">IKEA 모바일 앱</a></li>
+          <li class="lnb"><a href="#!">제품 사용 팁/가이드</a></li>
+          <li class="lnb"><a href="#!">제품 구매 가이드</a></li>
+          <li class="lnb"><a href="#!">결제 옵션</a></li>
+          <li class="lnb"><a href="#!">기프트 카드</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu03">
+          <li class="title">서비스</li>
+          <li class="lnb"><a href="#!">IKEA 서비스</a></li>
+          <li class="lnb"><a href="#!">배송 서비스</a></li>
+          <li class="lnb"><a href="#!">조립 서비스</a></li>
+          <li class="lnb"><a href="#!">설치 서비스</a></li>
+          <li class="lnb"><a href="#!">주방 서비스</a></li>
+          <li class="lnb"><a href="#!">플래닝 서비스</a></li>
+          <li class="lnb"><a href="#!">인테리어 디자인 서비스</a></li>
+          <li class="lnb"><a href="#!">바이백 서비스</a></li>
+        </ul>
+        <ul class="footer_menu footer_menu04">
+          <li class="title">IKEA 이야기</li>
+          <li class="lnb"><a href="#!">브랜드 소개</a></li>
+          <li class="lnb"><a href="#!">집에서의 삶</a></li>
+          <li class="lnb"><a href="#!">지속가능한 생활</a></li>
+          <li class="lnb"><a href="#!">내가 아끼는 집, 나를 아끼는 집</a></li>
+          <li class="lnb"><a href="#!">뉴스룸</a></li>
+          <li class="lnb"><a href="#!">채용정보</a></li>
+        </ul>
+        <ul class="footer_menu05">
+          <li class="title">IKEA Family</li>
+          <li class="desc">
+            지금 IKEA Family에 무료로 가입하고<br>
+            다양한 멤버 전용 혜택을 누리세요.
+          </li>
+          <li class="button">
+            <a href="#!">IKEA Family 가입하기</a>
+          </li>
+        </ul>
+      </div><!--footer_top_menu-->
+      <div class="footer_bottom_copyright">
+        <div class="sns_box">
+          <a href="https://ko-kr.facebook.com" class="facebook_icon"></a>
+          <a href="https://www.instagram.com/ikeakr/" class="instagram_icon"></a>
+          <a href="https://www.youtube.com/channel/UCvt32qJUh606U-W_hr-EF7A" class="youtube_icon"></a>
+        </div>
+        <p class="copyright01">
+          IKEA 코리아<br>
+          주소 : (우) 14352 경기도 광명시 일직로 17 IKEA광명점<br>
+          사업자 등록번호 : 106-86-82871 사업자정보확인
+        </p>
+        <p class="copyright02">
+          대표자 : 프레드릭 요한손<br>
+          통신판매업 신고 : 2018-경기광명-0209 / TEL : 1670-4532<br>
+          © Inter IKEA Systems B.V 1999-2022
+        </p>
+      </div><!--footer_bottom_copyright-->
+    </div><!--inner_footer-->
+  </footer><!--footer-->
+  <a href="#!" class="top_navi">
+    <span></span>
+  </a>
+  <section class="shopping_basket">
+    <div class="left_area">
+      <h2 class="section_name">장바구니</h2>
+      <p class="del_notice">총 주문금액이 <span class="bold">₩ 1,000,000</span> 이상일 경우 배송비가 무료입니다.</p>
+      <ul class="product_add">
+        <!-- 추가요소 영역 -->
+      </ul><!--product-->
+    </div><!--left_area-->
+    <div class="right_area">
+      <span class="exit"></span>
+      <p class="order_title">주문 내역</p>
+      <ul class="con cond_01">
+        <li class="name">전체 배송비</li>
+        <li>₩ <span class="price">0</span></li>
+      </ul>
+      <ul class="con cond_02">
+        <li class="name">총 할인 금액</li>
+        <li class="price">- ₩ 0</li>
+      </ul>
+      <ul class="result">
+        <li class="name">총 주문 금액</li>
+        <li>₩ <span class="price">0</span></li>
+        </ul>
+      <span class="order_btn">
+        결제하기
+      </span>
+      <span class="back_btn">
+        나가기
+      </span>
+      <form action="" class="coupon" name="coupon">
+        <p class="title">쿠폰 입력<span class="arrow"></span></p>
+        <div class="input_box">
+          <p class="notice">주문당 1개의 쿠폰만 사용할 수 있습니다.</p>
+          <p class="desc">쿠폰 코드 입력</p>
+          <input type="text" class="coupon_input">
+          <input type="submit" value="쿠폰 적용" class="coupon_submit">
+        </div>
+      </form>
+    </div><!--right_area-->
+  </section><!--shopping_basket-->
+  <section class="wish_list">
+    <h2 class="section_name">나의 위시리스트</h2>
+    <span class="back_btn exit"></span>
+    <div class="product_wrap">
+      <ul class="product_list">
+        <!-- 추가요소 영역 -->
+      </ul>
+    </div>
+    <div class="btn_box">
+      <span class="all_check">전체선택</span>
+      <span class="all_not">전체선택 해제</span>
+      <span class="check_del">선택항목 삭제</span>
+    </div>
+  </section><!--wish_list-->
+</body>
+</html>
