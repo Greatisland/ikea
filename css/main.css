@@ -300,6 +300,7 @@
   display: block;
   width: 200px;
   overflow: hidden;
+  margin: 0 0 20px;
 }
 
 .recommend .recommend_product .product .product_img img {
