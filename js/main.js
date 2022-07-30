@@ -125,15 +125,3 @@ const instaSlider = new Swiper(".insta_slider", {
   },
 })
 // swiper_insta_slider
-
-function windowLink() {
-  let aLinks = document.querySelectorAll(".sns_box a")
-  aLinks.forEach((aLink) => {
-    aLink.addEventListener("click", (e) => {
-      e.preventDefault()
-      window.open(aLink.href)
-    })
-  })
-}
-windowLink()
-// a태그가  현재 페이지가 아닌 새 창에서 열리도록 함
