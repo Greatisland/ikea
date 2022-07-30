@@ -300,6 +300,7 @@
   display: block;
   width: 200px;
   overflow: hidden;
+  margin: 0 0 10px;
 }
 
 .recommend .recommend_product .product .product_img img {
@@ -316,16 +317,17 @@
 
 .recommend .recommend_product .product .icon_box .product_icon {
   width: 37px; height: 37px;
-  border: 1px solid #999; box-sizing: border-box;
+  border: 1px solid #ccc; box-sizing: border-box;
   border-radius: 50%;
 }
 
-.recommend .recommend_product .product .icon_box .bag_btn {
-  background: url(../img/main_page/main_recommend/bag_icon.png)no-repeat center center;
+.recommend .recommend_product .product .icon_box .product_icon:hover {
+  background: #f2f2f2;
 }
 
-.recommend .recommend_product .product .icon_box .heart_btn {
-  background: url(../img/main_page/main_recommend/heart_icon.png)no-repeat center center;
+.recommend .recommend_product .product .icon_box .product_icon img {
+  width: 20px;
+  margin: 7px 0 0;
 }
 
 .recommend .recommend_product .product .product_desc {
