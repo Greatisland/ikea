@@ -355,7 +355,6 @@
 .event_display .img_move {
   position: absolute;
   top: -12%; left: 0;
-  transition: all ease-out 1s;
 }
 
 .event_display .back {display: block;}
