@@ -521,12 +521,13 @@
   border-radius: 50%;
 }
 
-.product_grid .product .icon_box .bag_btn {
-  background: url(../img/main_page/main_recommend/bag_icon.png)no-repeat center center;
+.product_grid .product .icon_box .product_icon:hover {
+  background: #f2f2f2;
 }
 
-.product_grid .product .icon_box .heart_btn {
-  background: url(../img/main_page/main_recommend/heart_icon.png)no-repeat center center;
+.product_grid .product .icon_box .product_icon img {
+  width: 20px;
+  margin: 7px 0 0;
 }
 
 .product_grid .product .product_desc {

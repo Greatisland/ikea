@@ -1,15 +1,14 @@
 function shoppingBasket() {
-  let shoppingSec = document.querySelector(".shopping_basket") //장바구니 섹션
-  let shoppingBtn = document.querySelector(".bag_icon") // header에 위치한 장바구니창 열림 버튼
-  let itemAdds = document.querySelectorAll(".bag_btn") // 각 item에 위치한 장바구니 추가 버튼
-  let productList = shoppingSec.querySelector(".product_add") //추가한 item이 담기는 부모 ul요소
-  let resultPrice = shoppingSec.querySelector(".result .price") // 장바구니 금액 렌더링
-  let totalPrice = 0 // 장바구니에 담긴 전체 금액
-  let listDupState = false // 장바구니 중복 추가 감지 상태변수
-  let deliveryCharge = 29000 // 배송비
-  let deliveryState = false // 배송비 추가유무 상태변수 (배송비는 1회만 추가되어야 함)
-
-  let couponBtn = shoppingSec.querySelector(".coupon .title")
+  let shoppingSec = document.querySelector(".shopping_basket"), //장바구니 섹션
+    shoppingBtn = document.querySelector(".bag_icon"), // header에 위치한 장바구니창 열림 버튼
+    itemAdds = document.querySelectorAll(".bag_btn"), // 각 item에 위치한 장바구니 추가 버튼
+    productList = shoppingSec.querySelector(".product_add"), //추가한 item이 담기는 부모 ul요소
+    resultPrice = shoppingSec.querySelector(".result .price"), // 장바구니 금액 렌더링
+    totalPrice = 0, // 장바구니에 담긴 전체 금액
+    listDupState = false, // 장바구니 중복 추가 감지 상태변수
+    deliveryCharge = 29000, // 배송비
+    deliveryState = false, // 배송비 추가유무 상태변수 (배송비는 1회만 추가되어야 함)
+    couponBtn = shoppingSec.querySelector(".coupon .title")
 
   couponBtn.addEventListener("click", () => {
     document.coupon.classList.toggle("on")
@@ -64,15 +63,15 @@ function shoppingBasket() {
   } // 장바구니 총 금액에 따른 배송비 변화
 
   function shoppingAdd() {
-    let thisProd = this.parentNode.parentNode
-    let title = thisProd.querySelector(".product_title").textContent // 상품 이름
-    let desc = thisProd.querySelector(".product_desc").textContent // 상품 설명
-    let price = thisProd.querySelector(".product_price .num_p").textContent //상품 가격
-    let numberPrice = Number(price.replace(/,/g, "")) //가격 데이터의 콤마(,) 제거
-    let img = thisProd.querySelector(".product_img img") // 상품 이미지
-    let link = thisProd.querySelector(".product_img")
-    let dataNum = thisProd.dataset.num // 상품 data Number
-    let lists = shoppingSec.querySelectorAll(".add_list") //장바구니에 추가된 items
+    let thisProd = this.parentNode.parentNode,
+      title = thisProd.querySelector(".product_title").textContent, // 상품 이름
+      desc = thisProd.querySelector(".product_desc").textContent, // 상품 설명
+      price = thisProd.querySelector(".product_price .num_p").textContent, //상품 가격
+      numberPrice = Number(price.replace(/,/g, "")), //가격 데이터의 콤마(,) 제거
+      img = thisProd.querySelector(".product_img img"), // 상품 이미지
+      link = thisProd.querySelector(".product_img"),
+      dataNum = thisProd.dataset.num, // 상품 data Number
+      lists = shoppingSec.querySelectorAll(".add_list") //장바구니에 추가된 items
 
     if (!lists[0] && !shoppingSec.classList.contains("on")) {
       if (
@@ -176,10 +175,10 @@ shoppingBasket()
 /***************************************************************************/
 
 function wishList() {
-  let wishSec = document.querySelector(".wish_list") // 위시리스트 섹션
-  let wishBtn = document.querySelector(".heart_icon") // header에 위치한  위시리스트창 열림 버튼
-  let wishAdds = document.querySelectorAll(".heart_btn") // 각 item에 위치한 위시리스트 추가 버튼
-  let productList = wishSec.querySelector(".product_list")
+  let wishSec = document.querySelector(".wish_list"), // 위시리스트 섹션
+    wishBtn = document.querySelector(".heart_icon"), // header에 위치한  위시리스트창 열림 버튼
+    wishAdds = document.querySelectorAll(".heart_btn"), // 각 item에 위치한 위시리스트 추가 버튼
+    productList = wishSec.querySelector(".product_list")
 
   let observer = new MutationObserver((mutations) => {
     // 감시자 인스턴스 만들기
@@ -243,15 +242,15 @@ function wishList() {
   }) // 위시리스트 추가
 
   function wishItemAdd() {
-    let thisProd = this.parentNode.parentNode
-    let title = thisProd.querySelector(".product_title").textContent // 상품 이름
-    let desc = thisProd.querySelector(".product_desc").textContent // 상품 설명
-    let price = thisProd.querySelector(".product_price .num_p").textContent //상품 가격
-    let img = thisProd.querySelector(".product_img img") // 상품 이미지
-    let link = thisProd.querySelector(".product_img")
-    let dataNum = thisProd.dataset.num // 상품 data Number
-    let lists = wishSec.querySelectorAll(".add_list") //위시리스트에 추가된 items
-    let listDupState = false // 위시리스트 중복 추가 감지 상태변수
+    let thisProd = this.parentNode.parentNode,
+      title = thisProd.querySelector(".product_title").textContent, // 상품 이름
+      desc = thisProd.querySelector(".product_desc").textContent, // 상품 설명
+      price = thisProd.querySelector(".product_price .num_p").textContent, //상품 가격
+      img = thisProd.querySelector(".product_img img"), // 상품 이미지
+      link = thisProd.querySelector(".product_img"),
+      dataNum = thisProd.dataset.num, // 상품 data Number
+      lists = wishSec.querySelectorAll(".add_list"), //위시리스트에 추가된 items
+      listDupState = false // 위시리스트 중복 추가 감지 상태변수
 
     if (!lists[0] && !wishSec.classList.contains("on")) {
       if (
@@ -301,11 +300,11 @@ const id = "abcd"
 const pw = 1234
 let loginState = false
 function loginFuc() {
-  let i = 5
-  let loginBtn = document.querySelector(".login_btn")
-  let joinBtn = document.querySelectorAll(".join_btn")
-  let loginSec = document.querySelector(".login_sec")
-  let loginExitBtn = document.querySelector(".login .exit")
+  let i = 5,
+    loginBtn = document.querySelector(".login_btn"),
+    joinBtn = document.querySelectorAll(".join_btn"),
+    loginSec = document.querySelector(".login_sec"),
+    loginExitBtn = document.querySelector(".login .exit")
 
   loginBtn.addEventListener("click", () => {
     if (!loginState) {

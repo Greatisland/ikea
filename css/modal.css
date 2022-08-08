@@ -1,6 +1,6 @@
 .shopping_basket {
   width: 1000px;
-  height: 800px;
+  height: 90vh;
   position: fixed;
   top: 70px;
   left: 50%;
@@ -167,6 +167,8 @@
   flex: 3;
   position: sticky;
   top: 0; right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .shopping_basket .right_area .order_title {
@@ -328,7 +330,7 @@
 
 .wish_list {
   width: 1000px;
-  height: 800px;
+  height: 80vh;
   position: fixed;
   top: 70px;
   left: 50%;

@@ -191,10 +191,10 @@ function filterRedisplay() {
           if (item.dataset.name == allCheck.dataset.name) {
             nameArray.push(item)
           }
-          if (item.dataset.style == allCheck.dataset.style) {
+          if (item.dataset.style.includes(allCheck.dataset.style)) {
             styleArray.push(item)
           }
-          if (item.dataset.color == allCheck.dataset.color) {
+          if (item.dataset.color.includes(allCheck.dataset.color)) {
             colorArray.push(item)
           }
           if (item.dataset.online == allCheck.dataset.online) {
