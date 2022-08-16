@@ -331,7 +331,7 @@ function loginFuc() {
       alert("로그인 성공, 방문을 환영합니다.")
       document.login.id_input.value = ""
       document.login.pw_input.value = ""
-      loginState = true
+      JSON.stringify(loginState = true)
       loginAfter()
     } else if (id != userId && pw == userPw && i > 0) {
       e.preventDefault()

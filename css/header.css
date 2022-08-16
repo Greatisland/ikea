@@ -193,7 +193,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .header .header_top .search {
-  display: flex;
+  display: flex!important;
   align-items: center;
   gap: 13px;
 }

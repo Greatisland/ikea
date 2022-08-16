@@ -1,37 +1,3 @@
-///////////////////////////  cat_sub 코드 ///////////////////////////
-
-function subTab() {
-  let tabBtns01 = document.querySelectorAll(".teaser_01 .tab")
-  let tabBtns02 = document.querySelectorAll(".teaser_02 .tab")
-  let focusImgs01 = document.querySelectorAll(".teaser_01 .focus_img")
-  let focusImgs02 = document.querySelectorAll(".teaser_02 .focus_img")
-
-  tabBtns01.forEach((tabBtn, i) => {
-    tabBtn.addEventListener("click", () => {
-      focusImgs01.forEach((forcusImg) => {
-        if (forcusImg.classList.contains("on")) {
-          forcusImg.classList.remove("on")
-        }
-      })
-      focusImgs01[i].classList.add("on")
-    })
-  })
-
-  tabBtns02.forEach((tabBtn, i) => {
-    tabBtn.addEventListener("click", () => {
-      focusImgs02.forEach((forcusImg) => {
-        if (forcusImg.classList.contains("on")) {
-          forcusImg.classList.remove("on")
-        }
-      })
-      focusImgs02[i].classList.add("on")
-    })
-  })
-}
-subTab()
-// teaser 탭메뉴 동작
-
-/////////////////////////// 여기서부터 sub_page 코드 ///////////////////////////
 function filterMenu() {
   let options = document.querySelectorAll(".filter_tab .option_menu")
   let optionLists = document.querySelectorAll(".filter_tab .option_lists")
@@ -280,10 +246,8 @@ function filterRedisplay() {
     allChecks.forEach((allCheck) => {
       if (allCheck.checked) {
         fliterState = true //필터가 하나라도 체크되어 있으면 true
-        console.log(fliterState)
       }
     })
-    console.log(fliterState)
     if (!fliterState) {
       items.forEach((item) => {
         item.classList.remove("filter_on") // 필터가 체크되어 있지 않으면 filter_on 클래스 제거하여 초기상태로 되돌림
