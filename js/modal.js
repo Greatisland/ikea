@@ -9,7 +9,9 @@ function shoppingBasket() {
     deliveryCharge = 29000, // 배송비
     deliveryState = false, // 배송비 추가유무 상태변수 (배송비는 1회만 추가되어야 함)
     couponBtn = shoppingSec.querySelector(".coupon .title")
-
+  
+  const shoppingItem = []
+  
   couponBtn.addEventListener("click", () => {
     document.coupon.classList.toggle("on")
   })
@@ -72,6 +74,16 @@ function shoppingBasket() {
       link = thisProd.querySelector(".product_img"),
       dataNum = thisProd.dataset.num, // 상품 data Number
       lists = shoppingSec.querySelectorAll(".add_list") //장바구니에 추가된 items
+    
+    const thisItem = {
+      title, desc, dataNum,
+      price: numberPrice,
+      link: link.href,
+      img: img.src
+    }
+
+    const getJson = localStorage.getItem('shoppingItem')
+    shoppingItem = JSON.parse(getJson)
 
     if (!lists[0] && !shoppingSec.classList.contains("on")) {
       if (
@@ -102,13 +114,16 @@ function shoppingBasket() {
       listDupState = false
       return
     } // 수량을 이미 추가했으므로 shoppingAdd함수를 여기서 빠져나옴
+    shoppingItem.push(thisItem)
+
+
 
     function addList(title, desc, price, img, link, dataNum) {
       return `
         <li class="add_list" data-num=${dataNum} data-price=${numberPrice}>
-          <a href=${link.href} class="prod_img"><img src=${img.src} alt=""></a>
+          <a href=${link} class="prod_img"><img src=${img} alt=""></a>
           <div class="text_box">
-            <a href=${link.href} class="title">${title}</a>
+            <a href=${link} class="title">${title}</a>
             <p class="desc">${desc}</p>
             <div class="btn_box">
               <div class="add_box">
@@ -124,7 +139,13 @@ function shoppingBasket() {
       `
     } //장바구니 추가상품 html구조 생성
 
-    productList.innerHTML += addList(title, desc, price, img, link, dataNum)
+    shoppingItem.forEach((item) => {
+      productList.innerHTML += addList(
+        item.title, item.desc, item.price.toLocaleString(), item.img, item.link, item.dataNum
+      )  
+    })
+
+    // productList.innerHTML += addList(title, desc, price, img, link, dataNum)
     totalPrice += numberPrice
     resultPrice.textContent = totalPrice.toLocaleString()
     totalPriceSense()
