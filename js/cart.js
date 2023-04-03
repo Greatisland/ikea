@@ -1,6 +1,6 @@
-let shoppingSec = document.querySelector(".shopping_basket"), //장바구니 섹션
+const shoppingSec = document.querySelector(".shopping_basket"), //장바구니 섹션
   itemAdds = document.querySelectorAll(".bag_btn"), // 각 item에 위치한 장바구니 추가 버튼
-  productList = shoppingSec.querySelector(".product_add"), //추가한 item이 담기는 부모 ul요소
+  cartProductList = shoppingSec.querySelector(".product_add"), //추가한 item이 담기는 부모 ul요소
   resultPrice = shoppingSec.querySelector(".result .price"), // 장바구니 금액 렌더링
   shoppingBtn = document.querySelector(".bag_icon"), // header에 위치한 장바구니창 열림 버튼
   couponBtn = shoppingSec.querySelector(".coupon .title"),
@@ -21,7 +21,7 @@ const render = () => {
   }, 0)
   resultPrice.textContent = totalPrice.toLocaleString()
 
-  productList.innerHTML = `
+  cartProductList.innerHTML = `
     ${state.shoppingItem.map(item => (`
       <li class="add_list" data-num=${item.dataNum} data-price=${item.price}>
           <a href=${item.link} class="prod_img"><img src=${item.img} alt=""></a>
@@ -95,7 +95,7 @@ const setState = (newState) => {
 }
 render()
 
-productList.addEventListener("click", (e) => {
+cartProductList.addEventListener("click", (e) => {
   const thisProduct = e.target.parentNode.parentNode.parentNode.parentNode
   const { shoppingItem } = state
   if (e.target.classList.contains("del")) {

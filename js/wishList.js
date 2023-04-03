@@ -1,6 +1,6 @@
 const wishSec = document.querySelector(".wish_list"), // 위시리스트 섹션
   wishAdds = document.querySelectorAll(".heart_btn"), // 각 item에 위치한 위시리스트 추가 버튼
-  productList = wishSec.querySelector(".product_list"),
+  wishProductList = wishSec.querySelector(".product_list"),
   wishBtn = document.querySelector(".heart_icon") // header에 위치한  위시리스트창 열림 버튼
 
 
@@ -44,7 +44,7 @@ let option = {
   characterData: true,
 } //감시자의 설정
 
-observer.observe(productList, option) //대상 노드에 감시자 전달
+observer.observe(wishProductList, option) //대상 노드에 감시자 전달
 
 wishAdds.forEach((wishAdd) => {
   wishAdd.addEventListener("click", wishItemAdd)
@@ -99,7 +99,7 @@ function wishItemAdd() {
     `
   } //위시리스트 추가상품 html구조 생성
 
-  productList.innerHTML += addList(title, desc, price, img, link, dataNum)
+  wishProductList.innerHTML += addList(title, desc, price, img, link, dataNum)
 } //위시리스트 item 추가
 
 
