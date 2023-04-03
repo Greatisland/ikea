@@ -83,7 +83,7 @@ function shoppingBasket() {
     }
 
     const getJson = localStorage.getItem('shoppingItem')
-    shoppingItem = JSON.parse(getJson)
+    if(getJson) shoppingItem = JSON.parse(getJson)
 
     if (!lists[0] && !shoppingSec.classList.contains("on")) {
       if (
@@ -115,6 +115,7 @@ function shoppingBasket() {
       return
     } // 수량을 이미 추가했으므로 shoppingAdd함수를 여기서 빠져나옴
     shoppingItem.push(thisItem)
+    console.log(shoppingItem)
 
 
 
