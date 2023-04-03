@@ -10,11 +10,11 @@ let shoppingSec = document.querySelector(".shopping_basket"), //장바구니 섹
 
 let state = {
   shoppingItem: []
-}//로컬스토리지에 담길 정보
+}//세션스토리지에 담길 정보
 
 
 const render = () => {
-  const jsonState = JSON.parse(localStorage.getItem('state'))
+  const jsonState = JSON.parse(sessionStorage.getItem('state'))
   if(jsonState !== null) state = jsonState
   const totalPrice = state.shoppingItem.reduce((acc, item) => {
     return acc + (item.price) * (item.count)
@@ -90,7 +90,7 @@ function shoppingAdd(){
 const setState = (newState) => {
   state = {...state, ...newState}
   const jsonState = JSON.stringify(state)
-  localStorage.setItem('state', jsonState)
+  sessionStorage.setItem('state', jsonState)
   render()
 }
 render()
